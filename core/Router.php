@@ -19,7 +19,6 @@ class Router
 
     public function direct($uri, $requestType)
     {
-
        if (array_key_exists($uri, $this->routes[$requestType])) {
 
             return $this->callAction(
@@ -30,7 +29,7 @@ class Router
 
        }
 
-       throw new Exception('No Routes Define For This URI.');
+       redirect('404');
 
     }
 

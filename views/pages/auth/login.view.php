@@ -33,7 +33,14 @@
                         </button>
                     </div>
                 </form>
-                <a href="/generate-table">generate</a>
+                <a href="/generate-table"  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                   generate sql table
+                </a>
+                <div class="text-center">
+                    <h>Default user</h>
+                    <p>email: root@example.com password: password</p>
+                    <p>after then sql file generate</p>
+                </div>
             </div>
         </div>
     </main>

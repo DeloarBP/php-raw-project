@@ -1,28 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b1ea5575-36df-424d-9c42-eb89f0e03e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/auth/login.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/user/create.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/user/index.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/404.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/issue/create.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5761b024-9a69-43c2-8913-b9bd005c8d47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5761b024-9a69-43c2-8913-b9bd005c8d47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-raw-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-raw-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/database/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/database/QueryBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dashboard.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/login.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1lhHT2VfrubOXf1png9VFScPc2j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -38,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/pages/auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/pages/issue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/pages/issue" />
       <recent name="$PROJECT_DIR$/views/pages/auth" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -70,6 +97,11 @@
       <updated>1608042406449</updated>
       <workItem from="1608042411487" duration="701000" />
       <workItem from="1608110610285" duration="17629000" />
+      <workItem from="1608224442332" duration="634000" />
+      <workItem from="1608319246034" duration="1051000" />
+      <workItem from="1608349363483" duration="21014000" />
+      <workItem from="1608435416226" duration="1112000" />
+      <workItem from="1608441449810" duration="8000" />
     </task>
     <servers />
   </component>
@@ -86,5 +118,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

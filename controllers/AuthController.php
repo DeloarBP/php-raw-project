@@ -3,23 +3,28 @@
 
 //namespace controller;
 
+use controller\Controller;
 
-class AuthController
+class AuthController extends Controller
 {
 
     private $viewPath = 'pages/auth/';
 
     public function index()
     {
-        return view("{$this->viewPath}login");
+        if(!$this->isLogin()) {
+            return view("{$this->viewPath}login");
+        }
+        redirect('dashboard');
     }
-
 
     public function login()
     {
         if ($_POST['email'] && $_POST['password']) {
 
-            $this->isCheckLogin($_POST['email'], $_POST['password']);
+            if($this->isCheckLogin($_POST['email'], $_POST['password'])) {
+                redirect('dashboard');
+            }
 
         }
     }
@@ -44,20 +49,39 @@ class AuthController
     {
        $user =  App::get('database')->fetchUserByEmail($email);
 
+       if (!$user) {
+
+           Session::set('error', [
+               'login' => 'email or password don\'t match'
+           ]);
+
+           redirect('');
+       }
+
        if (password_verify($password, $user[0]->password)) {
           return $this->setSessionData($user[0]);
        }
+
     }
 
     public function setSessionData($userData)
     {
-        session_start();
-        $_SESSION['role'] = $userData->role;
-        $_SESSION['username'] = $userData->first_name . ' ' . $userData->last_name;
-        $_SESSION['isLogin'] = true;
-        session_write_close();
-
+        Session::start();
+        Session::set('auth', [
+            'id' => $userData->id,
+            'name' => $userData->first_name,
+            'role' => $userData->role,
+            'isLogin' => true
+        ]);
         return true;
+    }
+
+    public function logout()
+    {
+        if(Session::destroy()) {
+            redirect('');
+        }
+        redirect('dashboard');
     }
 
     public function createTable()
